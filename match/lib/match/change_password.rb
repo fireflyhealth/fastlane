@@ -20,7 +20,7 @@ module Match
         git_branch: params[:git_branch],
         git_full_name: params[:git_full_name],
         git_user_email: params[:git_user_email],
-        clone_branch_directly: params[:clone_branch_directly]
+        clone_branch_directly: params[:clone_branch_directly],
         git_private_key: params[:git_private_key],
         git_basic_authorization: params[:git_basic_authorization],
         git_bearer_authorization: params[:git_bearer_authorization],
