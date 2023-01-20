@@ -56,6 +56,7 @@ module Fastlane
       private
 
       attr_reader :secret_access_key
+      attr_reader :session_token
 
       def client
         @client ||= Aws::S3::Client.new(
