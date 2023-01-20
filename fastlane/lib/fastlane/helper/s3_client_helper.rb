@@ -6,9 +6,10 @@ module Fastlane
       attr_reader :access_key
       attr_reader :region
 
-      def initialize(access_key: nil, secret_access_key: nil, region: nil, s3_client: nil)
+      def initialize(access_key: nil, secret_access_key: nil, region: nil, s3_client: nil, session_token: nil)
         @access_key = access_key
         @secret_access_key = secret_access_key
+        @session_token = session_token
         @region = region
 
         @client = s3_client
@@ -70,7 +71,8 @@ module Fastlane
 
         Aws::Credentials.new(
           access_key,
-          secret_access_key
+          secret_access_key,
+          session_token
         )
       end
     end
