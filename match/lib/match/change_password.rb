@@ -24,7 +24,6 @@ module Match
         git_private_key: params[:git_private_key],
         git_basic_authorization: params[:git_basic_authorization],
         git_bearer_authorization: params[:git_bearer_authorization],
-        clone_branch_directly: params[:clone_branch_directly],
         type: params[:type].to_s,
         platform: params[:platform].to_s,
         google_cloud_bucket_name: params[:google_cloud_bucket_name].to_s,
