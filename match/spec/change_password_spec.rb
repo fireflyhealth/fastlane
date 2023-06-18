@@ -19,13 +19,35 @@ describe Match do
 
       fake_storage = "fake_storage"
       expect(Match::Storage::GitStorage).to receive(:configure).with(
-        git_url: git_url,
-        shallow_clone: true,
-        skip_docs: false,
+        api_key: nil,
+        api_key_path: nil,
+        clone_branch_directly: false,
+        git_basic_authorization: nil,
+        git_bearer_authorization: nil,
         git_branch: "master",
         git_full_name: nil,
+        git_private_key: nil,
+        git_url: git_url,
         git_user_email: nil,
-        clone_branch_directly: false
+        gitlab_project: nil,
+        google_cloud_bucket_name: "",
+        google_cloud_keys_file: "",
+        google_cloud_project_id: "",
+        platform: "ios",
+        readonly: false,
+        s3_access_key: nil,
+        s3_bucket: nil,
+        s3_object_prefix: nil,
+        s3_region: nil,
+        s3_secret_access_key: nil,
+        s3_session_token: nil,
+        shallow_clone: true,
+        skip_docs: false,
+        skip_google_cloud_account_confirmation: false,
+        team_id: nil,
+        team_name: nil,
+        type: "appstore",
+        username: "flapple@something.com"
       ).and_return(fake_storage)
 
       allow(fake_storage).to receive(:download)

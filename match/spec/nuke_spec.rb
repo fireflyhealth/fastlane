@@ -41,6 +41,7 @@ describe Match do
         google_cloud_project_id: "",
         s3_region: "",
         s3_access_key: "",
+        s3_session_token: "",
         s3_secret_access_key: "",
         s3_bucket: "",
         s3_object_prefix: "",

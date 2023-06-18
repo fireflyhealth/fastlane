@@ -143,6 +143,7 @@ describe Match do
         s3_bucket: nil,
         s3_region: nil,
         s3_access_key: nil,
+        s3_session_token: nil,
         s3_secret_access_key: nil,
         s3_object_prefix: nil,
         gitlab_project: nil,

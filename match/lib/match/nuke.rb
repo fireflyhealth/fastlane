@@ -52,6 +52,7 @@ module Match
         google_cloud_project_id: params[:google_cloud_project_id].to_s,
         s3_region: params[:s3_region].to_s,
         s3_access_key: params[:s3_access_key].to_s,
+        s3_session_token: params[:s3_session_token].to_s,
         s3_secret_access_key: params[:s3_secret_access_key].to_s,
         s3_bucket: params[:s3_bucket].to_s,
         s3_object_prefix: params[:s3_object_prefix].to_s,
