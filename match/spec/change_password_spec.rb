@@ -18,15 +18,6 @@ describe Match do
       repo_dir = Dir.mktmpdir
 
       fake_storage = "fake_storage"
-      # expect(Match::Storage::GitStorage).to receive(:configure).with(
-      #   git_url: git_url,
-      #   shallow_clone: true,
-      #   skip_docs: false,
-      #   git_branch: "master",
-      #   git_full_name: nil,
-      #   git_user_email: nil,
-      #   clone_branch_directly: false
-      # ).and_return(fake_storage)
       expect(Match::Storage::GitStorage).to receive(:configure).with(
         api_key: nil,
         api_key_path: nil,
