@@ -7,7 +7,6 @@ module Match
   # These functions should only be used while in (UI.) interactive mode
   class ChangePassword
     def self.update(params: nil)
-
       ensure_ui_interactive
 
       new_password = FastlaneCore::Helper.ask_password(message: "New passphrase for Git Repo: ", confirm: true)
